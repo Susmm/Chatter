@@ -1,0 +1,221 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Jan 17, 2023, 12:41:43 PM
+    Author     : susmit
+*/
+
+/*.registration {
+  //width: 50vw;
+  //height: 50vh;
+  background-color: #f0f2f5;
+  display: flex;
+  //align-items: center;
+  justify-content: center;
+}*/
+::-moz-selection { /* Code for Firefox */
+  background: cornflowerblue;
+}
+
+::selection {
+  background: cornflowerblue;
+}
+.regisWrapper {
+  width: 80%;
+  height: 80%;
+  display: flex;
+}
+
+.regisLeft,
+.regisRight {
+  flex: 10; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.regisLeft{
+    padding-left: 45px;
+    padding-top: 45px;
+
+}
+/*.regisLogo {
+  font-size: 50px;
+  font-weight: 800;
+  color: #1775ee;
+  margin-bottom: 10px;
+}*/
+
+.regisDesc {
+  font-size: 18px;
+}
+.profile_ {
+  vertical-align: middle;
+  width: 66.8px;
+  height: 66.8px;
+  border-radius: 50%;
+  padding: 7px;
+  border: 1px solid mediumslateblue;
+}
+.regisBox{
+    /*height: 300px;*/
+    padding: 40px;
+    padding-right: 50px;
+    width:115.2%;
+    /*padding: 12px;*/
+    /*background-color: #f0f2f5;*/
+    /*border-radius: 10px;*/
+    text-align: center;
+    /*display: flex;
+    flex-direction: column;
+    justify-content:center;*/
+}
+
+.regisInput{
+    height: 38px;
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid royalblue; /*gray;*/
+    /*font-size: 20px;*/
+    padding-left: 20px;
+}
+
+.regisInput:focus-within{
+    outline: none;
+    border: 2px solid royalblue;
+}
+
+.regisButton{
+    height: 47px;
+    width: 325.5px;
+    border-radius: 10px;
+    border: none;   
+    background-color: #1775ee; 
+    /*#1775ee;*/
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    padding-left: 8.4px; /*30px;*/
+}
+
+.regisButton:focus{
+  outline: none;
+}
+
+.regisButton:disabled{
+  cursor: not-allowed;
+}
+
+.regisForgot{
+    /*text-align: center;*/
+    color: blue; /*#1775ee;*/
+    font-size: 14.7px;
+    font-family:inherit;
+    /*font-weight: bold;*/
+    /*cursor: pointer;*/
+}
+
+/*.regisRegisterButton{
+    width: 60%;
+    align-self: center;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #42b72a;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}*/
+input[type="checkbox"]{
+  visibility: hidden;
+  position: absolute;
+}
+/*input[type="checkbox"] + label:before{
+  height:12px;
+  width:12px;
+  margin-right: 7px;*/
+/*  margin-left: 2.8px;*/
+/*  margin-bottom: 1.091px;
+  content: "";
+  display:inline-block;
+  vertical-align:text-bottom;
+  border:1px solid #777;
+  border-radius:50%;
+}
+input[type="checkbox"]:checked + label:before{
+  background-color: royalblue;
+}*/
+/*input[type="checkbox"]:checked + label:before{
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}*/
+.container {
+  display: inline-block;
+  position: relative;
+  padding-left: 19.4px;
+  cursor: pointer;
+  /*font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;*/
+}
+
+/* Hide the browser's default radio button */
+/*.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}*/
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  border: 2px groove lawngreen;
+  vertical-align: text-bottom;
+  margin-right: 3px;
+}
+
+
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: lawngreen;
+  border:1px solid darkgreen;
+  height: 12px;
+  width: 12px;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: inline-block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 4px;
+	left: 4px;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: white;
+}
