@@ -28,45 +28,46 @@ This is a full-stack chat application built with privacy and security in mind. I
 
 ### Clone the Repository
 
-```
+```bash
 git clone https://github.com/Susmm/Chatter.git .
 cd Chatter
 ```
 
 ### Backend Setup
 
-    1. Navigate to the server directory:
+1. Navigate to the server directory:
     
-```
+```bash
 cd server
 ```
 
-	2. Install the dependencies:
+2. Install the dependencies:
 	
-```
+```bash
 npm install
 ```
-	3. Start the server:
 
-```
+3. Start the server:
+
+```bash
 npm start
 ```
 
 ### Frontend Setup
 
-	1. Open a new terminal window and navigate to the client directory:
+1. Open a new terminal window and navigate to the client directory:
 	
 ```
 cd client
 ```
 
-	2. Install the React dependencies:
+2. Install the React dependencies:
 	
 ```
 npm install
 ```
 
-	3. Start the React development server:
+3. Start the React development server:
 	
 ```
 npm start
@@ -77,8 +78,8 @@ The client will run at [http://localhost:3000](http://localhost:3000).
 
 ### MongoDB Setup
 
-    1. Ensure MongoDB is running.
-    2. Create the required database and collection:
+1. Ensure MongoDB is running.
+2. Create the required database and collection:
 
 ```
 use test
